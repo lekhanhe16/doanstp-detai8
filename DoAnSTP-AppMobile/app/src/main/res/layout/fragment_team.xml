@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/team_icon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ball"
+                android:layout_marginRight="16dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/team_icon"
+                android:text="Team name"
+                android:id="@+id/team_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/team_icon"
+                android:layout_below="@+id/team_name"
+                android:text="w d l"
+                android:id="@+id/team_wdl"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Thanh tich"
+
+                android:id="@+id/btn_change_teamic"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/btn_change_teamic"
+                android:text="Roi doi"
+                android:id="@+id/btn_delete_team"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/field2"
+            tools:context=".view.MyTeamFragment">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/txt_fw"
+                android:background="#FFFF"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:text="FW"
+                android:layout_marginTop="64dp"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:id="@+id/list_fw"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/txt_fw"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:background="#FFFF"
+                android:id="@+id/txt_mf"
+                android:layout_below="@+id/list_fw"
+                android:layout_alignParentStart="true"
+                android:text="MF"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/list_mf"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+
+                android:layout_below="@+id/txt_mf"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/txt_df"
+                android:background="#FFFF"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/list_mf"
+                android:layout_alignParentStart="true"
+                android:text="DF"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:id="@+id/list_df"
+                android:layout_below="@+id/txt_df"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/txt_gk"
+                android:background="#FFFF"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/list_df"
+                android:layout_alignParentStart="true"
+                android:text="GK"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:id="@+id/list_gk"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/txt_gk"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

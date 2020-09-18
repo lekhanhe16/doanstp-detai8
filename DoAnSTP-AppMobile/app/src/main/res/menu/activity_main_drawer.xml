@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_team_manage"
+            android:icon="@drawable/team"
+            android:title="@string/menu_team_manage">
+
+        </item>
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ball"
+            android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_star"
+            android:title="Dang xuat"/>
+    </group>
+</menu>

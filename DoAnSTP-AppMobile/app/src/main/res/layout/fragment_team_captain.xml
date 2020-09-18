@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/team_icon_cap"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ball"
+                android:layout_marginRight="16dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/team_icon_cap"
+                android:text="Team name"
+                android:id="@+id/team_name_cap"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/team_icon_cap"
+                android:layout_below="@+id/team_name_cap"
+                android:text="w d l"
+                android:id="@+id/team_wdl_cap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Quan ly doi bong"
+
+                android:id="@+id/btn_manage_team_cap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/btn_manage_team_cap"
+                android:text="Kiem duyet"
+                android:id="@+id/btn_duyet_tv_cap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_noti"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/btn_duyet_tv_cap"
+                android:layout_below="@id/btn_manage_team_cap"
+                android:text="N"
+                android:textSize="10sp"
+                android:id="@+id/btn_cen_cap"
+                android:layout_marginRight="6dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/btn_duyet_tv_cap"
+                android:text="Giai tan"
+                android:id="@+id/btn_delete_team_cap"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/field2"
+            tools:context=".view.MyTeamFragment">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_them_ct_cap"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_person_add"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/txt_fw_cap"
+                android:background="#FFFF"
+                android:layout_below="@+id/btn_them_ct_cap"
+                android:layout_alignParentStart="true"
+                android:text="FW"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:id="@+id/list_fw_cap"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/txt_fw_cap"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#FFFF"
+                android:id="@+id/txt_mf_cap"
+                android:layout_below="@+id/list_fw_cap"
+                android:layout_alignParentStart="true"
+                android:text="MF"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/list_mf_cap"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+
+                android:layout_below="@+id/txt_mf_cap"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/txt_df_cap"
+                android:background="#FFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/list_mf_cap"
+                android:layout_alignParentStart="true"
+                android:text="DF"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:id="@+id/list_df_cap"
+                android:layout_below="@+id/txt_df_cap"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/txt_gk_cap"
+                android:background="#FFFF"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/list_df_cap"
+                android:layout_alignParentStart="true"
+                android:text="GK"
+                android:layout_marginLeft="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:id="@+id/list_gk_cap"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/txt_gk_cap"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DoAnSTP</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_map">Tim kiem</string>
+    <string name="menu_team_manage">Doi bong cua toi</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_logout">Dang xuat</string>
+
+    <string-array name="player_position">
+        <item>FW</item>
+        <item>MF</item>
+        <item>DF</item>
+        <item>GK</item>
+    </string-array>
+    <string name="title_activity_match_control">MatchControl</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string-array name="tinhthanh">
+        <item>Ha Noi</item>
+        <item>Hue</item>
+        <item>TP HCM</item>
+    </string-array>
+</resources>
