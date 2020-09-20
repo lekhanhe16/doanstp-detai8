@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "579185789059",
+    "firebase_url": "https://doanstp.firebaseio.com",
+    "project_id": "doanstp",
+    "storage_bucket": "doanstp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579185789059:android:9bf1fded3fd1ac35ecf3b6",
+        "android_client_info": {
+          "package_name": "com.kl.doanstp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579185789059-bgj4kqvtb6pe7ulsrjkg4vtg649amol5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kl.doanstp",
+            "certificate_hash": "61b2e3a511ee8768e6791e8d0e01b40365ba2246"
+          }
+        },
+        {
+          "client_id": "579185789059-ekm5cs71t819hqlpovjt525hhu2mgtsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7VT6VsZ1fxL5R4omRAy0vbqwhjLLtGaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579185789059-ekm5cs71t819hqlpovjt525hhu2mgtsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
